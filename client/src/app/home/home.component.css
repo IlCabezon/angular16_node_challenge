@@ -1,0 +1,56 @@
+.customTableContainer {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.customTable {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  overflow-x: auto;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+}
+
+.customTableHeaderCell,
+.customTableDataCell {
+  padding: 18px 15px;
+  color: #fff;
+  text-align: left;
+}
+
+.customTableHeaderCell {
+}
+
+.customTableRow {
+  border-top: 1px solid #ddd;
+  background-color: var(--color-primary);
+}
+
+.customTableRow:hover {
+  background-color: #f5f5f55b;
+}
+
+.genderContainer {
+  display: flex;
+  gap: 1em;
+  text-transform: capitalize;
+}
+
+.male {
+  color: var(--color-male);
+}
+
+.female {
+  color: var(--color-female);
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.image {
+  border-radius: 50%;
+}

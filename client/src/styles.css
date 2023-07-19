@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+:root {
+  --color-primary: #212529;
+  --color-accent: #607d8b;
+  --color-bg: #141414;
+  --color-text: #ffffff;
+  --color-border: #455a64;
+  --color-chart: #4caf50;
+  --color-male: #add8e6;
+  --color-female: #ffc0cb;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--color-text);
+  font-family: "Roboto", sans-serif;
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.content {
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+}
+
+.title {
+  letter-spacing: calc(1rem - 0.8vw);
+}
+.title::first-letter {
+  color: var(--color-chart);
+}

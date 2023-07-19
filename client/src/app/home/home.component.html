@@ -1,0 +1,53 @@
+<div class="pageContainer">
+  <div class="content">
+    <h1 class="title">UseRandom()</h1>
+
+    <table class="customTable">
+      <thead class="customTableHeaderCell">
+        <tr>
+          <th *ngFor="let title of titles" class="customTableHeaderCell">
+            {{ title }}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users; let i = index" class="customTableRow">
+          <td class="customTableDataCell">
+            {{ i + 1 }}
+          </td>
+
+          <td class="customTableDataCell">
+            <div class="genderContainer">
+              <i
+                class="icon"
+                [ngClass]="
+                  user.gender === 'male'
+                    ? 'fa-solid fa-person male'
+                    : 'fa-solid fa-person-dress female'
+                "
+              ></i>
+              <p [ngClass]="user.gender">
+                {{ user.gender }}
+              </p>
+            </div>
+          </td>
+
+          <td class="customTableDataCell">
+            <div class="imageContainer">
+              <img
+                [src]="user.picture.thumbnail"
+                alt="user photo"
+                class="image"
+              />
+              <span class="ms-3">
+                {{ user.name.title }} {{ user.name.first }} {{ user.name.last }}
+              </span>
+            </div>
+          </td>
+
+          <td class="customTableDataCell">{{ user.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
