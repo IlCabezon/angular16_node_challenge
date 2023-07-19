@@ -11,3 +11,4 @@ router.get("/ping", (_, res) => {
 router.get("/users", getUsers);
 
 module.exports = router;
+
